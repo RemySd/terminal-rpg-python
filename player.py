@@ -1,13 +1,10 @@
-from monster import Monster
-
-
 class Player:
-    def __init__(self, name: str) -> None:
+    def __init__(self, name):
         self.name = name
         self.life = 10
         self.attack = 2
 
-    def attack_monster(self, monster: Monster) -> Monster:
+    def attack_monster(self, monster):
         monster.life = monster.life - self.attack
 
         if monster.life < 0:

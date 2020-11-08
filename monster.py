@@ -1,5 +1,5 @@
 class Monster:
-    def __init__(self, life: int, attack: int) -> None:
+    def __init__(self, life, attack):
         self.life = life
         self.attack = attack
 

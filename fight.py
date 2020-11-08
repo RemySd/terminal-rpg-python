@@ -1,8 +1,7 @@
-from player import Player
 from monster import Monster
 
 
-def start_fight(player: Player) -> Player:
+def start_fight(player):
     monster = Monster(10, 2)
     print('--- Start fight ---')
     monster.show_stats()
